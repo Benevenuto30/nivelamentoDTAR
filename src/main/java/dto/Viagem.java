@@ -1,6 +1,7 @@
 package dto;
 
 import enums.Destinos;
+
 import java.util.List;
 
 public class Viagem {
@@ -8,15 +9,15 @@ public class Viagem {
     private Destinos destino;
     private List<Acompanhante> acompanhantes;
 
-    public Viagem(Destinos lugarDeDestino){
+    public Viagem(Destinos lugarDeDestino) {
         this.destino = lugarDeDestino;
     }
 
-    public Destinos getDestino(){
+    public Destinos getDestino() {
         return this.destino;
     }
 
-    public void setDestino(Destinos lugarDeDestino){
+    public void setDestino(Destinos lugarDeDestino) {
         this.destino = lugarDeDestino;
     }
 
@@ -24,7 +25,7 @@ public class Viagem {
         return this.acompanhantes;
     }
 
-    public void setAcompanhantes(List<Acompanhante>acompanhantes){
+    public void setAcompanhantes(List<Acompanhante> acompanhantes) throws Exception {
         this.acompanhantes = acompanhantes;
     }
 }
